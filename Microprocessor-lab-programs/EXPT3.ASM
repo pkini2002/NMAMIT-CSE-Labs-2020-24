@@ -1,0 +1,62 @@
+;Write an ALP to read an alphanumeric character and display its equivalent ASCII code at the center of the screen
+
+CLRSCR MACRO
+   MOV AH,00H
+   MOV AL,02H
+   INT 10H
+ENDM
+
+SETCURSOR MACRO ROW,COL
+   MOV DL,COL
+   MOV DH,ROW
+   MOV BH,00H
+   MOV AH,02H
+   INT 10H
+ENDM
+
+DATA SEGMENT
+N DB ?
+MSG1 DB 10,13, "ENTER THE CHARACTER:$"
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+START:MOV AX,DATA
+      MOV DS,AX
+      LEA DX,MSG1
+      MOV AH,09H
+      INT 21H
+      MOV AH,01H
+      INT 21H
+      MOV N,AL
+      CLRSCR
+      SETCURSOR 12,40
+      MOV BL,N
+      CALL DISPLAYHEXA
+      MOV AH,01H
+      INT 21H
+      MOV AH,4CH
+      INT 21H
+
+DISPLAYHEXA PROC NEAR
+      MOV DL,BL
+      MOV CL,04H
+      SHR DL,CL
+      CMP DL,09H
+      JBE L1
+      ADD DL,07H
+L1:   ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      MOV DL,BL
+      AND DL,0FH
+      CMP DL,09H
+      JBE L2
+      ADD DL,07H
+L2:   ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      RET
+DISPLAYHEXA ENDP
+CODE ENDS
+END START

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1624950996 source:c:\users\hp\documents\sum_of_all_num\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1624952001 source:c:\users\hp\onedrive\desktop\c lab program\2.sum of digits of a num\main.c
+	<stdio.h>
+	<stdlib.h>
+

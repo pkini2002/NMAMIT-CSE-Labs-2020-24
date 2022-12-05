@@ -1,0 +1,76 @@
+;Assembly language program to perform Binary search
+
+DATA SEGMENT
+ARR DB 06H,14H,25H,3AH,76H,89H,91H
+LEN DB $-ARR
+KEY DB 76H
+MID DB ?
+MSG1 DB 10,13 , "KEY NOT FOUND$"
+MSG2 DB 10,13 , "KEY ITEM FOUND AT POSITION = $"
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+START: MOV AX,DATA
+       MOV DS,AX
+       MOV DL,00H
+       MOV DH,LEN
+       MOV BX,0000
+       MOV CL,KEY
+
+UP:    CMP DL,DH
+       JG NOTFOUND
+       MOV BL,DL
+       ADD BL,DH
+       SHR BL,01H
+       MOV MID,BL
+       CMP CL,ARR[BX]
+       JZ FOUND
+       JB FIRSTHALF
+       INC MID
+       MOV DL,MID
+       JMP UP
+
+FIRSTHALF:DEC MID
+          MOV DH,MID
+          JMP UP
+
+NOTFOUND:LEA DX,MSG1
+         MOV AH,09H
+         INT 21H
+         JMP EXIT
+
+FOUND: LEA DX,MSG2
+       MOV AH,09H
+       INT 21H
+       MOV BL,MID
+       CALL DISPLAYHEXA
+
+EXIT: MOV AH,4CH
+      INT 21H
+
+DISPLAYHEXA PROC NEAR
+       MOV DL,BL
+       MOV CL,04H
+       SHR DL,CL
+       CMP DL,09H
+       JBE L1
+       ADD DL,07H
+
+L1:ADD DL,30H
+   MOV AH,02H
+   INT 21H
+   MOV DL,BL
+   AND DL,0FH
+   CMP DL,09H
+   JBE L2
+   ADD DL,07H
+
+L2:ADD DL,30H
+   MOV AH,02H
+   INT 21H
+   RET
+DISPLAYHEXA ENDP
+
+CODE ENDS
+END START

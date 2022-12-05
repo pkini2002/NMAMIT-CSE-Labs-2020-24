@@ -1,0 +1,75 @@
+DATA SEGMENT
+F1 DB 00H
+F2 DB 01H
+F3 DB ?
+MSG DB 10,13,"FIBONACCI SERIES IS:$"
+N DB 10
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+START:MOV AX,DATA
+      MOV DS,AX
+      LEA DX,MSG
+      MOV AH,09H
+      INT 21H
+      MOV BL,F1
+      CALL DISPLAYHEXA
+      MOV DL,' '
+      MOV AH,02H
+      INT 21H
+      MOV BL,F2
+      CALL DISPLAYHEXA
+      MOV DL,' '
+      MOV AH,02H
+      INT 21H
+      MOV CL,00H
+      SUB N,02H
+
+UP:   CMP CL,N
+      JZ EXIT
+      MOV AL,F1
+      ADD AL,F2
+      MOV F3,AL
+      MOV BL,F3
+      CALL DISPLAYHEXA
+      MOV DL,' '
+      MOV AH,02H
+      INT 21H
+      MOV AL,F2
+      MOV F1,AL
+      MOV AL,F3
+      MOV F2,AL
+      INC CL
+      JMP UP
+
+EXIT:MOV AH,4CH
+     INT 21H
+
+DISPLAYHEXA PROC NEAR
+      PUSH CX
+      MOV DL,BL
+      MOV CL,04H
+      SHR DL,CL
+      CMP DL,09H
+      JBE L1
+      ADD DL,07H
+L1:   ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      MOV DL,BL
+      AND DL,0FH
+      CMP DL,09H
+      JBE L2
+      ADD DL,07H
+L2:   ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      POP CX
+      RET
+DISPLAYHEXA ENDP
+
+CODE ENDS
+END START
+
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1625723917 source:c:\users\hp\documents\struct_2_lab_program\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1625724264 source:c:\users\hp\onedrive\desktop\c lab program\15.structures\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

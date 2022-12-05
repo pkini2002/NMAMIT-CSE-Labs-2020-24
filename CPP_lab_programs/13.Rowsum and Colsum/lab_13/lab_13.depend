@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1625247599 source:c:\users\hp\documents\lab_13\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1625247637 source:c:\users\hp\onedrive\desktop\c lab program\13.rowsum and colsum\lab_13\main.c
+	<stdio.h>
+	<stdlib.h>
+

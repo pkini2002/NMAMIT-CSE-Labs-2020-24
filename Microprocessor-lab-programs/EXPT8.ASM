@@ -1,0 +1,69 @@
+DATA SEGMENT
+HR DB ?
+MIN DB ?
+SEC DB ?
+MSEC DB ?
+MSG DB 10,13,"THE CURRENT TIME IS:$"
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+START:MOV AX,DATA
+      MOV DS,AX
+      LEA DX,MSG
+      MOV AH,09H
+      INT 21H
+
+      MOV AH,2CH
+      INT 21H
+
+      MOV HR,CH
+      MOV MIN,CL
+      MOV SEC,DH
+      MOV MSEC,DL
+
+      MOV AL,HR
+      AAM
+      MOV BX,AX
+      CALL DISPUNPACKDBCD
+      MOV DL,":"
+      MOV AH,02H
+      INT 21H
+
+      MOV AL,MIN
+      AAM
+      MOV BX,AX
+      CALL DISPUNPACKDBCD
+      MOV DL,":"
+      MOV AH,02H
+      INT 21H
+
+      MOV AL,SEC
+      AAM
+      MOV BX,AX
+      CALL DISPUNPACKDBCD
+      MOV DL,":"
+      MOV AH,02H
+      INT 21H
+
+      MOV AL,MSEC
+      AAM
+      MOV BX,AX
+      CALL DISPUNPACKDBCD
+      MOV AH,4CH
+      INT 21H
+
+DISPUNPACKDBCD PROC NEAR
+      MOV DL,BH
+      ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      MOV DL,BL
+      ADD DL,30H
+      MOV AH,02H
+      INT 21H
+      RET
+DISPUNPACKDBCD ENDP
+
+CODE ENDS
+END START

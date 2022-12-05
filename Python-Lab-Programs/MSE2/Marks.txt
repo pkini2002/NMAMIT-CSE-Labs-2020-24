@@ -1,0 +1,10 @@
+Student0 A B A C C D E E A D
+Student1 D B D C C D A E A D
+Student2 E D D A C B E E A D
+Student3 C C A E D C E E A A
+Student4 A B D C C D E E A D
+Student5 B B E C C D E E A D
+Student6 B B A C C D D D D D
+Student7 E B E C C D E E A D
+Student8 C B A E D C A A E E
+Student9 A B D C C D E E A D

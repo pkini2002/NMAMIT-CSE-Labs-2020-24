@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1624516017 source:c:\users\hp\documents\lin_search\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1624516017 source:c:\users\hp\onedrive\desktop\c lab program\12.linear search\main.c
+	<stdio.h>
+	<stdlib.h>
+
