@@ -18,3 +18,8 @@
 - Operating Systems Lab
 - Database Mangement Systems Lab
 
+## Semester 6
+- Machine Learning Lab
+- Computer Networks Lab
+- Computer Graphics Lab
+- Android App Development in Java Lab
