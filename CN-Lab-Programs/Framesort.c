@@ -118,3 +118,27 @@ int main()
     free(transdata);
     return 0;
 }
+
+// Output
+
+/*
+
+Enter the message to be transmitted
+hellohi
+The message has been divided as follows:
+
+Packet No       Data
+
+1               hel
+2               loh
+3               i
+Packets received in the following order:
+   3   2   1
+Packets in order after sorting is:
+   1   2   3
+Message received in following order:
+hellohi
+Process returned 0 (0x0)   execution time : 2.720 s
+Press any key to continue.
+
+*/
