@@ -1,3 +1,5 @@
+// Generating random background colors on button click
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
