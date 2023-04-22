@@ -45,3 +45,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+// In AndroidManifest.xml below </activity> and above </application> paste the below line
+//  <service android:name=".MyService"/>
+
