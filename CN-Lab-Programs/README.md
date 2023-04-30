@@ -6,3 +6,6 @@
 - Write a program for Hamming Code generation for error detection and correction. 
 - Write a program for simple RSA algorithm to encrypt and decrypt the data 
 - Write a program for congestion control using Leaky bucket algorithm.
+- Using UDP SOCKETS, write a client-server program to make the client sending two numbers and an operator, and server responding with the result. Display the result and appropriate messages for invalid inputs at the client side.
+- Using TCP sockets, write a client-server program to make client sending the file name and the server to send back the contents of the requested file if present.
+
