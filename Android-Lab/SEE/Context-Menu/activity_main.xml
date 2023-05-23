@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context=".MainActivity"
+ tools:layout_editor_absoluteX="-4dp"
+ tools:layout_editor_absoluteY="133dp"
+ android:id="@+id/CL">
+  
+ <TextView
+ android:id="@+id/textView"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Context Menu"
+ android:textSize="30sp"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent"
+ app:layout_constraintVertical_bias="0.135" />
+  
+ <TextView
+ android:id="@+id/CMenu"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="-30dp"
+ android:text="Press and hold here"
+ android:textSize="30sp"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent"
+ app:layout_constraintVertical_bias="0.504" />
+</androidx.constraintlayout.widget.ConstraintLayout>
