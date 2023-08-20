@@ -16,10 +16,14 @@
 ## Semester 5
 - Programming in Java Lab
 - Operating Systems Lab
-- Database Mangement Systems Lab
+- Database Management Systems Lab
 
 ## Semester 6
 - Machine Learning Lab
 - Computer Networks Lab
 - Computer Graphics Lab
 - Android App Development in Java Lab
+
+## Semester 7
+- Compiler Design Lab
+- Software Testing Lab
