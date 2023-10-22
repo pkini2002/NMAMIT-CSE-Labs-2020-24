@@ -1,0 +1,196 @@
+{
+  "id": "b5a7dfc5-beed-4864-a123-cfd4e9d22fab",
+  "version": "2.0",
+  "name": "Snapdeal-Testing",
+  "url": "https://snapdeal.com/",
+  "tests": [{
+    "id": "07ee88a2-14e6-49f4-ab4b-9585ae35652f",
+    "name": "t1",
+    "commands": [{
+      "id": "6cfc3f5b-f476-49ef-b7dd-5e5790eeb35c",
+      "comment": "",
+      "command": "open",
+      "target": "https://snapdeal.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61e94a66-fadc-4f3c-9dbd-e4bf1b159c3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c19f08e2-1021-4708-9541-547fbf8ffa25",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e72000d7-03f1-42fe-87f4-bc29c2fe8db8",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Impact@Snapdeal",
+      "targets": [
+        ["linkText=Impact@Snapdeal", "linkText"],
+        ["css=.topHooks:nth-child(1) > .dp-widget-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Impact@Snapdeal')]", "xpath:link"],
+        ["xpath=//div[@id='sdHeader']/div[4]/section/div/span[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://impactatsnapdeal.com/')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Impact@Snapdeal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6081816c-6be8-400d-8715-6213e295b9c8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d759bc15-6dd3-41bc-85f4-e69d3bf02a57",
+    "name": "t2",
+    "commands": [{
+      "id": "7d2f8723-a68b-4edf-9fb7-7bca00ef0cb8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.snapdeal.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f895e2e8-55b4-4025-8789-9dd51fadf82a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82aa2f94-3437-43b2-94fa-8704b46d3cf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47423576-1e1f-4401-a25c-3c448cb7252f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Shirts for Men",
+      "targets": [
+        ["linkText=Shirts for Men", "linkText"],
+        ["css=.brandContainerFooter:nth-child(1) .footerSubCategory:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shirts for Men')]", "xpath:link"],
+        ["xpath=//div[@id='sdFooter']/div[2]/div[3]/div/div/span/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.snapdeal.com/products/men-apparel-shirts')])[2]", "xpath:href"],
+        ["xpath=//span/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shirts for Men')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e7aaa78-9ffb-4812-ab97-5594f4f403b1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "741180a5-57c8-499a-b597-e708d2b84296",
+    "name": "t3",
+    "commands": [{
+      "id": "c30ed1ce-2510-4dbd-b1ab-b53b3ae2b582",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.snapdeal.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9c5d587-4ed1-48ed-9af4-1c02a7229965",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f08337d9-2aa3-4e6d-ba6d-7e2df500d318",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30ec13f2-cf8b-4670-9c11-2c2b7fe639d2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,427.3333435058594)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08752afd-5df3-4344-a926-2a253db5c8d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.trendingProd:nth-child(6) .wooble",
+      "targets": [
+        ["css=.trendingProd:nth-child(6) .wooble", "css:finder"],
+        ["xpath=//img[contains(@src,'https://n1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg')]", "xpath:img"],
+        ["xpath=//div[@id='content_wrapper']/section/div[4]/section/div[2]/div/div/div[5]/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div[2]/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7394",
+      "windowTimeout": 2000
+    }, {
+      "id": "c68055c2-8125-46b2-99ef-0cefe4a7c040",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7394}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da4969eb-bb88-4cc5-8f96-b9b904625448",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=247 Reviews",
+      "targets": [
+        ["linkText=247 Reviews", "linkText"],
+        ["css=.numbr-review > a", "css:finder"],
+        ["xpath=//a[contains(text(),'247 Reviews')]", "xpath:link"],
+        ["xpath=//div[@id='productOverview']/div[2]/div/div/div/div[3]/div[2]/div/div/span[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript: void(0)')]", "xpath:href"],
+        ["xpath=//span[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'247 Reviews')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18169ae8-0f21-4664-ae02-562d40651700",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8beadc20-7584-4733-8c8a-7ac756e64cf7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["07ee88a2-14e6-49f4-ab4b-9585ae35652f"]
+  }],
+  "urls": ["https://snapdeal.com/"],
+  "plugins": []
+}
