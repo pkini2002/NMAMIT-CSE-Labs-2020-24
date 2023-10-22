@@ -1,0 +1,232 @@
+{
+  "id": "f95df272-8914-4d23-bc1f-29879ee59b40",
+  "version": "2.0",
+  "name": "Google-Automation",
+  "url": "https://www.google.co.in/",
+  "tests": [{
+    "id": "5e83c415-4b01-4755-9a34-7d9b4f0dd33b",
+    "name": "t1",
+    "commands": [{
+      "id": "03691b53-97c1-4c2f-bd16-a8d9513faaed",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cf4bd50-9e8a-4f49-a8d0-573c9f5c182b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d345cbcd-18a1-4632-a246-27dda05ff9b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > div:nth-child(1)",
+      "targets": [
+        ["css=form > div:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4571d670-ae11-46b0-ad23-015379e37342",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gb_Hd",
+      "targets": [
+        ["css=.gb_Hd", "css:finder"],
+        ["xpath=//div[@id='gb']/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae29849a-fbbb-43f9-8d25-4d67b5ee1ece",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='yDmH0d']/c-wiz/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd87b18c-6528-49f6-9e09-74eea3e3d9d9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "02a827d9-d6ef-40ac-8ad9-d778e318b3f2",
+    "name": "t2",
+    "commands": [{
+      "id": "06eaa43e-4685-4b54-bf54-7cbcb49bdf70",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc38a5ca-5789-491f-ac7c-85edf62aae63",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef558431-265b-4b91-b732-359b866158ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb04bac7-8aa8-4ad3-8338-5b2a12619f16",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "chatgpt"
+    }, {
+      "id": "d78016dc-cd61-4abf-81ec-b99e4edcfc84",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=btnK",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82634ca9-ef99-4c1a-9c9c-cb0cf30438d4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10d8bd93-41ea-48bd-982a-68da41d7fc0a",
+    "name": "t3",
+    "commands": [{
+      "id": "f54947d5-f323-4482-8f66-34ea9199eb41",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f710511-9f2a-4bb7-8fbf-081ab893cc46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91ea4eee-2fcb-438a-b266-0440e7b98dab",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > div:nth-child(1)",
+      "targets": [
+        ["css=form > div:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9995825f-c48d-4227-a610-d9c5a9074d7a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Gmail",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c94fe04-33a7-452e-a2f6-e3d0c2b8d15f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "076310c4-b144-4f45-9405-afb7a2d11a42",
+    "name": "t4",
+    "commands": [{
+      "id": "9f5f1c45-218d-4545-8d05-8344d63022e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1d0e2ab-3b3f-4b50-a901-8926b0ce47d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63c76d55-ac8e-492e-bcf7-ce62a20c560c",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > div:nth-child(1)",
+      "targets": [
+        ["css=form > div:nth-child(1)", "css:finder"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a56de1bc-dc3e-416f-9e06-dce5c6c77bcd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(text(),'Images')]",
+      "targets": [
+        ["linkText=Images", "linkText"],
+        ["css=.gb_F:nth-child(2) > .gb_E", "css:finder"],
+        ["xpath=//a[contains(text(),'Images')]", "xpath:link"],
+        ["xpath=//div[@id='gb']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.co.in/imghp?hl=en&ogbl')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Images')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbb6259e-ae77-42e8-8f73-8bc70e07d536",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "85a11bf7-21fb-46a1-8738-5f005dbf4664",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e83c415-4b01-4755-9a34-7d9b4f0dd33b"]
+  }],
+  "urls": ["https://www.google.co.in/"],
+  "plugins": []
+}
