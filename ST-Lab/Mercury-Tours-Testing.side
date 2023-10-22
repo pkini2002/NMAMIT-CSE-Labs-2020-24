@@ -1,0 +1,171 @@
+{
+  "id": "bc7ded70-319d-4124-94af-37480ba27976",
+  "version": "2.0",
+  "name": "Mercury-Tours-Testing",
+  "url": "http://www.mercury-tours.com/",
+  "tests": [{
+    "id": "f06b6182-ef7f-44a3-bdf7-53844ff3f341",
+    "name": "t1",
+    "commands": [{
+      "id": "7912c97e-73be-4eeb-a759-2265afc599f2",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.mercury-tours.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "539baea1-0c1d-4fc7-bda8-2657fd36299a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73524893-7f38-48f8-9e17-46dcaf34a91a",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1e6b0f1-90d4-4edc-bec7-a5c15cb5e486",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[@id='Navagation']/strong/a/span",
+      "targets": [
+        ["css=a:nth-child(1) > .auto-style7", "css:finder"],
+        ["xpath=//div[@id='Navagation']/strong/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93d1fad8-c4a2-4ed8-a7e3-7af934a00fd4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7ed5b1e5-38e0-4f80-9922-8bf82021dbe6",
+    "name": "t2",
+    "commands": [{
+      "id": "f174aa58-afdd-447a-8875-c9e7aa27999b",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.mercury-tours.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9999cc7-4bbf-4f48-be4c-cf136cc6ea00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47a6c452-c912-4061-afd0-97ca61e70337",
+      "comment": "",
+      "command": "click",
+      "target": "id=Welcome_Bar",
+      "targets": [
+        ["id=Welcome_Bar", "id"],
+        ["css=#Welcome_Bar", "css:finder"],
+        ["xpath=//div[@id='Welcome_Bar']", "xpath:attributes"],
+        ["xpath=//div[@id='Wrapper']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa7988f-0ebc-4b65-b090-b5040b93d8ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=Bus_Pic",
+      "targets": [
+        ["id=Bus_Pic", "id"],
+        ["css=#Bus_Pic", "css:finder"],
+        ["xpath=//div[@id='Bus_Pic']", "xpath:attributes"],
+        ["xpath=//div[@id='Wrapper']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ea41116-2858-4363-aead-66f981868501",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(7) > .auto-style7",
+      "targets": [
+        ["css=a:nth-child(7) > .auto-style7", "css:finder"],
+        ["xpath=//div[@id='Navagation']/strong/a[4]/span", "xpath:idRelative"],
+        ["xpath=//a[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'San Franscisco Tours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0369103-51cd-45c3-b60d-f158a19a8df9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"Greeting_0\"]/font/strong/span/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c0103b9-d3d3-43eb-9ba1-2c09118cf3b4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "507a6627-cbe0-49cc-83ee-18f6c0c03af9",
+    "name": "t3",
+    "commands": [{
+      "id": "73a841f3-97ad-4c23-b9b6-82ceeee4791b",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.mercury-tours.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76faf472-274a-45e0-a28d-33f496654ecf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ebba14d-84db-4bb5-84cc-08fd6c72cf7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Wrapper",
+      "targets": [
+        ["id=Wrapper", "id"],
+        ["css=#Wrapper", "css:finder"],
+        ["xpath=//div[@id='Wrapper']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f4e4dc-c06c-48ea-a5d8-bddb7116efc6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"Wrapper\"]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3284d64c-ff3f-4a2f-964f-ab921e7c51de",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f06b6182-ef7f-44a3-bdf7-53844ff3f341"]
+  }],
+  "urls": ["http://www.mercury-tours.com/"],
+  "plugins": []
+}
