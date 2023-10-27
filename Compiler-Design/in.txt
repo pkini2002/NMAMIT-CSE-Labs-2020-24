@@ -1,0 +1,10 @@
+int main(){
+int L[10];
+int maxval=L[0];
+for(int i=1;i<10;i++){
+if(L[i]>maxval){
+maxval=L[i];
+}
+}
+return maxval;
+}
