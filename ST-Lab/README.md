@@ -6,7 +6,7 @@
 
 <br>
 
-- Open `airasia.com`. Search flight process to automate and locate web elements using IDE. For the same, write a test suite containing a minimum 3 test cases using IDE, record and playback
+- Open `airasia.com`. Search flight process to automate and locate web elements using ID. For the same, write a test suite containing a minimum 3 test cases using IDE, record and playback
 
 <br>
 
@@ -48,4 +48,15 @@
     * Enter the username and password
     * Click on the Sign-In Button
     * Close the web browser
+
+<br>
+
+- Automate the following scenario using the selenium web driver script.
+    * Launch the Firefox browser
+    * Open the website, “https://www.flipkart.com”.
+    * Print a message to display that the website is opened successfully.
+    * Wait for 5 seconds.
+    * Close the browser
+
+
   
